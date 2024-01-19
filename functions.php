@@ -147,6 +147,7 @@ function sale_item_loop_shortcode() {
             $output .=  '</div>';
             $output .=  '<div>';
             $output .= '<h2>' . get_the_title() . '</h2>';
+
             $output .= '<div class="sale-item-description">' . get_the_content() . '</div>';
             $output .= '</div>';
             $output .= '</div>';
