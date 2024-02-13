@@ -263,12 +263,21 @@ function custom_events_loop() {
         while ( $events_query->have_posts() ) {
             $events_query->the_post();
             ?>
-            <div class="event">
-                <div class="event-image">
-                    <h1> testing </h1>
-                </div>
-                <div class="event-info">
+            <div class="single-event-container">
+                <div class="box event-info">
                     <h1><?php echo get_the_title(); ?></h1>
+                </div>
+                <div class="box event-image">
+                    <div class="event-item-image">
+                        <?php
+                        if ( has_post_thumbnail() ) {
+                            echo get_the_post_thumbnail();
+                        } else {
+                            // Output default image if no featured image is set
+                            echo '<img src="' . get_template_directory_uri() . '/wp-content/uploads/2024/01/Group-773.png" alt="Default Event Image">';
+                        }
+                        ?>
+                    </div>
                 </div>
             </div>
             <?php

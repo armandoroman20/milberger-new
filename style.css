@@ -13,3 +13,19 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
 */
 
 /* Add your custom styles here */
+
+.single-event-container {
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+}
+
+.box {
+    width: 50%;
+}
+
+@media (max-width: 600px) {
+    .box {
+        width: 100%;
+    }
+}
