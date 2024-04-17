@@ -14,3 +14,493 @@ Tags: flexible-header, custom-colors, custom-menu, custom-logo, editor-style, fe
 
 /* Add your custom styles here */
 
+ .small-caps {
+     font-variant: small-caps !important;
+     text-transform: capitalize !important;
+ }
+
+ body {
+     overflow-x: hidden !important;
+ }
+
+ .flex-container {
+     display: flex !important;
+ }
+
+ .post-content-shortcode-text {
+     font-family: 'Source Serif 4';
+     font-size: 22px;
+     color: white;
+     font-weight: 500;
+     line-height: 1.25em;
+ }
+
+ /* .all-modern-roses-content {
+	display: none !important;
+} */
+
+ .modern-roses-list a {
+     cursor: pointer;
+ }
+
+ .active {
+     color: black !important;
+ }
+
+ /* comment the following to see / edit all sections on the variety page  */
+
+ #modern-content {
+     display: none;
+ }
+
+ #granifloras-content,
+ #granifloras-image,
+ #floribundas-content,
+ #floribundas-image,
+ #climbers-content,
+ #climbers-image,
+ #miniatures-content,
+ #miniatures-image,
+ #shrubs-content,
+ #shrubs-image,
+ #groundcovers-content,
+ #groundcovers-image {
+     display: none;
+ }
+
+ /* comment the above */
+
+
+ /* below is for the custom sales loops */
+
+
+
+ .red-sale-text,
+ .green-sale-text {
+     text-align: center;
+     font-family: "Source Serif 4", Sans-serif;
+     font-size: 22px;
+     font-weight: 500;
+     margin: 0;
+ }
+
+ .red-sale-text {
+     color: #ff0000;
+ }
+
+ .green-sale-text {
+     color: #008000;
+ }
+
+ 
+
+ /* above is for the custom sales loop */
+
+ /* .swiper-pagination .swiper-pagination-bullet {
+	height: 25px !important;
+	width: 25px !important;
+} */
+
+ /* below is for the pagination bullets in elementor slider */
+ .swiper-pagination.swiper-pagination-clickable.swiper-pagination-bullets.swiper-pagination-horizontal>span.swiper-pagination-bullet {
+     height: 20px;
+     width: 20px;
+ }
+
+ .swiper-pagination-bullet-active {
+     background-color: white;
+ }
+
+
+ /* below is CSS for events loop */
+ .single-event-container {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     height: 400px;
+     width: 100%;
+ }
+
+ .event-image {
+     background-size: cover;
+     background-repeat: no-repeat;
+     background-position: center center;
+     border-radius: 0 30px 30px 0;
+ }
+
+ .event-info {
+     background-color: #4B944B;
+     border-radius: 30px 0 0 30px;
+     padding: 20px 20px 20px 20px;
+ }
+
+
+ .event-month,
+ .event-day,
+ .event-title,
+ .event-content,
+ .event-time {
+     font-family: 'Source Serif Pro';
+     color: white;
+     font-weight: bold;
+     margin: 0;
+     line-height: 1em;
+ }
+
+ .event-month {
+     font-size: 25px;
+ }
+
+ .event-day {
+     font-size: 62px;
+ }
+
+ .event-content {
+     font-size: 20px;
+     padding: 0px 20px 20px 50px;
+ }
+
+ a.read-more {
+     color: white;
+     text-decoration: underline;
+ }
+
+ .event-title {
+     font-size: 39px;
+     padding: 20px 20px 20px 50px;
+ }
+
+ .event-time {
+     font-size: 31px;
+     padding-left: 50px;
+ }
+
+
+
+ .box {
+     width: 50%;
+     height: auto;
+ }
+
+ @media (max-width: 600px) {
+
+     .single-event-container {
+         height: 100%;
+     }
+
+     .event-month,
+     .event-day,
+     .event-title,
+     .event-content,
+     .event-time {
+         padding-left: 25px;
+     }
+
+     .box {
+         width: 100%;
+         min-height: 400px;
+         border-radius: 0;
+     }
+
+     .owl-nav {
+         position: absolute !important;
+         top: 20% !important;
+         transform: translateX(0px) !important;
+         width: 100% !important;
+     }
+
+     .owl-prev {
+
+         position: absolute;
+         left: 0;
+         z-index: 1;
+         /* Ensure the arrows are above the content */
+     }
+
+     .owl-next {
+
+         position: absolute;
+         right: 0;
+         z-index: 1;
+         /* Ensure the arrows are above the content */
+     }
+
+     button.owl-prev>span,
+     button.owl-next>span {
+         font-size: 60px !important;
+     }
+
+
+     button.owl-prev>span,
+     button.owl-next>span {
+         color: white !important;
+         font-size: 100px;
+     }
+ }
+
+
+ @media (min-width: 601px) {
+     .owl-nav {
+         /* position: absolute;
+    top: 150px;
+    transform: translateY(-50%);
+    width: 120%; */
+
+         position: absolute;
+         top: 130px;
+         transform: translateX(-47px);
+         width: 108%;
+
+     }
+
+     .owl-prev {
+
+         position: absolute;
+         left: 0;
+         z-index: 1;
+         /* Ensure the arrows are above the content */
+     }
+
+     .owl-next {
+
+         position: absolute;
+         right: 0;
+         z-index: 1;
+         /* Ensure the arrows are above the content */
+     }
+
+     button.owl-prev>span,
+     button.owl-next>span {
+         color: #808080;
+         font-size: 100px;
+     }
+ }
+
+ /* above is CSS for events loop */
+
+ /* below is css for the sale loops */
+
+
+ /* container */
+ .sale-item-loop {
+     display: flex;
+     flex-wrap: wrap;
+
+ }
+
+ /* columns */
+ .responsive-two-column-grid {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 600px;
+ }
+
+
+@media (min-width: 1441px) {
+
+    .responsive-two-column-grid{
+        height: 800px;
+    }
+
+}
+
+
+ .sale-item-image-container {
+    position: relative;
+        /* Ensure positioning context for absolute positioning */
+        width: 100%;
+        /* Occupy full width of parent container */
+        height: 100%;
+        /* Occupy full height of parent container */
+        overflow: hidden;
+        /* Hide any content that exceeds container dimensions */
+ }
+
+ .sale-item-image img{
+        position: absolute;
+        /* Position the image absolutely within its container */
+        top: 0;
+        /* Position at the top of the container */
+        left: 0;
+        /* Position at the left of the container */
+        width: 100%;
+        /* Occupy full width of parent container */
+        height: 100%;
+        /* Occupy full height of parent container */
+        object-fit: cover;
+        /* Scale the image to cover the entire container */
+ }
+
+ .responsive-two-column-grid>div {
+     width: 100%;
+ }
+
+
+ .sales-loop-heading {
+     color: #4b944b;
+     font-size: 32px;
+ }
+
+ .sales-loop-content {
+     color: #4D4D4D;
+
+     font-size: 22px;
+
+ }
+
+ .sales-loop-heading,
+ .sales-loop-content {
+     font-family: "Source Serif 4", Sans-serif;
+     font-weight: 500;
+
+ }
+
+ .content-area-container {
+     text-align: center;
+     /* margin: auto; */
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     padding: 0px 50px;
+
+ }
+
+ 
+
+
+ /* Alternating background color for title and content areas */
+ .even .content-area-container {
+     background-color: #f1f4e4;
+     /* Set your background color for even posts */
+     background-image: url("/wp-content/uploads/2024/02/Asset-66@2x.png");
+     background-size: contain;
+     background-repeat: no-repeat;
+     background-position: top;
+     padding: 20px 20px;
+ }
+
+ .odd .content-area-container {
+     background-color: #EDF4F7;
+     /* Set your background color for odd posts */
+     background-image: url("/wp-content/uploads/2024/01/†.png");
+     background-size: contain;
+     background-repeat: no-repeat;
+     background-position: bottom;
+     padding: 20px 20px;
+ }
+
+ /* tablet breakpoint */
+ @media (min-width: 768px) {
+     .responsive-two-column-grid {
+         flex-direction: row;
+         margin-bottom: 40px;
+     }
+
+     .responsive-two-column-grid.image-right {
+         display: flex;
+         flex-direction: row-reverse;
+     }
+
+     .responsive-two-column-grid>div {
+         width: 50%;
+     }
+ }
+
+ /* above is CSS for the sales loop */
+
+
+ /* below is single event page CSS */
+
+ .tribe-events-single-event-title {
+     font-family: "Source Serif 4", Sans-serif;
+     font-size: 32px;
+     font-weight: 500;
+     color: #4b944b;
+     text-align: center;
+ }
+
+ .tribe-events-schedule span,
+ .tribe-events-single-event-description.tribe-events-content>p {
+     text-align: center !important;
+     color: #4D4D4D !important;
+     font-family: "Source Serif 4", Sans-serif;
+     font-size: 22px;
+     font-weight: 500;
+ }
+
+ .tribe-events-c-subscribe-dropdown__button,
+ {
+ background-color: #4b944b !important;
+ color: white !important;
+ border: none !important;
+ }
+
+ .tribe-events-c-subscribe-dropdown__button-text,
+ .tribe-events-nav-pagination a {
+
+     font-family: "Source Serif 4", Sans-serif !important;
+
+     font-weight: 500 !important;
+ }
+
+ .tribe-events-nav-pagination a,
+ .tribe-events-nav-pagination span {
+     color: #4b944b !important;
+ }
+
+ /* events calendar css */
+
+ /* the all events page button */
+ .tribe-common-c-btn {
+     background-color: #4b944b !important;
+     color: white !important;
+     border: none !important;
+     font-family: "Source Serif 4", Sans-serif !important;
+     font-weight: 500 !important;
+     border-radius: 0 !important;
+ }
+
+ .tribe-events-calendar-list__event-description,
+ .tribe-events-calendar-list__event-title,
+ .tribe-events-calendar-list__event-datetime-wrapper,
+ .tribe-events-calendar-list__event-date-tag-weekday,
+ .tribe-events-calendar-list__event-date-tag-daynum,
+ .tribe-events-calendar-list__month-separator-text,
+ .tribe-events-c-nav__list a {
+     font-family: "Source Serif 4", Sans-serif !important;
+ }
+
+ .tribe-events-calendar-list__event-date-tag-weekday,
+ tribe-events-calendar-list__event-date-tag-daynum {
+     color: #4b944b !important;
+ }
+
+ .tribe-events-calendar-list__event-title a {
+     font-size: 22px;
+     color: #4b944b !important;
+ }
+
+ .tribe-events-calendar-list__event-description {
+     font-size: 16px !important;
+ }
+
+
+ /* above is CSS for the single event page */
+
+ /* gravity form button CSS */
+ .gform_button,
+ .gform_next_button,
+ .gform_previous_button {
+     background-color: #4b944b !important;
+     color: white !important;
+     border: none !important;
+     font-family: "Source Serif 4", Sans-serif !important;
+     font-size: 16px !important;
+     font-weight: 500 !important;
+     border-radius: 0 !important;
+ }
+
+ .gf_progressbar_percentage {
+     background-color: #4b944b !important;
+ }

@@ -241,10 +241,10 @@ function sale_item_loop_shortcode() {
 
             ?>
             <div class="responsive-two-column-grid <?php echo ( $count % 2 === 0 ? 'even' : 'odd' ) . ( $count % 2 === 0 ? ' image-right' : '' ); ?>">
-                <div>
-                    <div class="sale-item-image"><?php echo get_the_post_thumbnail(); ?></div>
+                <div class="sale-item-image-container">
+                    <div class="sale-item-image-container"><?php echo get_the_post_thumbnail(); ?></div>
                 </div>
-                <div class="content-area">
+                <div class="content-area-container">
                     <h2 class="small-caps sales-loop-heading"><?php echo get_the_title(); ?></h2>
                     <div class="sale-item-description sales-loop-content"><?php echo get_the_content(); ?></div>
                     <?php
